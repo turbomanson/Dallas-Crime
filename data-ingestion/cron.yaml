@@ -2,4 +2,4 @@ cron:
 - description : ingest dpd data
   url : /ingest
   schedule: every 24 hours
-  target: crime
+  target: default

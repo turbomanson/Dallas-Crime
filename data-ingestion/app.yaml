@@ -1,7 +1,7 @@
 runtime: custom
 env: flex
 entrypoint: gunicorn -b :$PORT get_data_app:app
-service: crime
+service: default
 
 #[START env]
 env_variables:
