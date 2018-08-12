@@ -11,7 +11,6 @@ def download_save(domain, token, dataset_id, path, file_name):
 	df.to_csv(path+file_name)
 
 def main():
-	if __name__ == '__main__':
 	APP_TOKEN = os.environ.get("SODA_DALLAS_APPTOKEN")
 	DOMAIN = "www.dallasopendata.com"
 	DATASET_ID = "tbnj-w5hb"
