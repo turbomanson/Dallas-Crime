@@ -13,4 +13,4 @@ handlers:
   script: get_data_app.app
 
 - url: /.*
-script: get_data_app.app
+  script: get_data_app.app
