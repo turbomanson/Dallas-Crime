@@ -1,0 +1,16 @@
+runtime: custom
+env: flex
+entrypoint: gunicorn -b :$PORT get_data_app:app
+service: crime
+
+#[START env]
+env_variables:
+    CLOUD_STORAGE_BUCKET: dpd-opendata
+#[END env]
+
+handlers:
+- url: /ingest
+  script: get_data_app.app
+
+- url: /.*
+script: get_data_app.app

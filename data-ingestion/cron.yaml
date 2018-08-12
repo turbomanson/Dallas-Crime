@@ -1,0 +1,5 @@
+cron:
+- description : ingest dpd data
+  url : /ingest
+  schedule: every 2 days
+target: crime
