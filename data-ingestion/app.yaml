@@ -6,6 +6,7 @@ service: default
 #[START env]
 env_variables:
     CLOUD_STORAGE_BUCKET: dpd-opendata
+    #SODA_DALLAS_APPTOKEN:
 #[END env]
 
 handlers:
